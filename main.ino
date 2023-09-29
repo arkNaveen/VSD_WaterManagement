@@ -9,7 +9,7 @@ void setup() {
   // Pin setup for Ultrasonic Sensor
   ultrasoundsetup();
 
-  // Pin setup for 
+  // Pin setup for Moisture Sensor
   pinMode(param.moisturePin,INPUT);
   Serial.begin(9600);
   
@@ -21,7 +21,7 @@ void loop() {
   // Conditions of the water level supply -> Reflected on servo motors
   waterlevelcheck();
 
-  // Checking for availabilty of Rain through moisture sensor
+  // Checking for presence of Rain through moisture sensor
   rainwatercheck();
 
   // Checking for availabilty of Bluetooth connection
@@ -52,6 +52,7 @@ void loop() {
           param.BT_input = "A";
         }
       }
+  // Motor is set to OFF during Bluetooth Input A
   if(param.BT_input=="A")
   {
     servo1.write(0);
