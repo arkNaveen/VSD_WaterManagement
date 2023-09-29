@@ -4,7 +4,7 @@
 #include "Servo.h"
 #include <SoftwareSerial.h>
 
-// Structure for all pins.
+// Structure for all pins
 // RX and TX pins are the built arduino pins whose calling is not required 
 struct parameters {
     const int servoPin1 = 5;
