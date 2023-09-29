@@ -25,36 +25,30 @@ void loop() {
   rainwatercheck();
 
   // Checking for availabilty of Bluetooth connection
-  if (Serial.available())
-    {   
+  if (Serial.available()) {   
         param.BT_input = Serial.readString();   // read input string from bluetooth 
         
-        if(eff_distance<10)
-        {
+        if(eff_distance<10) {
           Serial.print("Critical water level");
         }
         
-        if(eff_distance>1900)
-        {
+        if(eff_distance>1900) {
           Serial.print("Excess water level");
         }
         // "A" input from android APP returns the water level
-        if(param.BT_input=="A")
-        {
+        if(param.BT_input=="A") {
           Serial.print("Current water level ");
           Serial.print(eff_distance);
         }
         // "B" input from android APP stops the servo motor and sets the default BT input to A
-        if(param.BT_input=="B")
-        {
+        if(param.BT_input=="B") {
           Serial.print("You have choosen to stop the motor)");
           servo1.write(0);
           param.BT_input = "A";
         }
       }
   // Motor is set to OFF during Bluetooth Input A
-  if(param.BT_input=="A")
-  {
+  if(param.BT_input=="A") {
     servo1.write(0);
   }
   delay(500);
