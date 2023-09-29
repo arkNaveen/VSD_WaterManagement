@@ -1,7 +1,7 @@
 # VSD_WaterManagement
 Smart management of Water Supply 
 
-# Arduino Compilation
+#h1 Arduino Compilation
 The arduino code is written and compiled successfully in Arduino IDE with the log file generated in console copied to arduino_log.txt file
 
 # Riscduino Compilation
