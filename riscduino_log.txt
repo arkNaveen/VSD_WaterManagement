@@ -1,0 +1,26 @@
+FQBN: riscduino:riscv:uno
+Using board 'uno' from platform in folder: C:\Users\kolle\AppData\Local\Arduino15\packages\riscduino\hardware\riscv\1.2.6
+Using core 'riscduino' from platform in folder: C:\Users\kolle\AppData\Local\Arduino15\packages\riscduino\hardware\riscv\1.2.6
+
+loading library from c:\Users\kolle\Documents\Arduino\libraries\riscduino-master: invalid library: no header files found
+Detecting libraries used...
+"C:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\tools\\riscv64-unknown-elf-gcc\\1.0.1/bin/riscv64-unknown-elf-g++" -c -O2 -march=rv32imc -mabi=ilp32 -fpeel-loops -ffreestanding -ffunction-sections -fdata-sections -fpermissive -Wall -fno-rtti -fno-exceptions "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6\\system/include" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6/sdk/bsp/include" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6/sdk/bsp/env" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6/sdk/bsp/drivers" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6/sdk/bsp/env/riscduino" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6/sdk/bsp/env/uncache" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\tools\\riscv64-unknown-elf-gcc\\1.0.1/riscv64-unknown-elf/include/c++/10.2.0/riscv64-unknown-elf/rv32imc/ilp32" -include sys/cdefs.h -g -w -x c++ -E -CC -DRISCDUINO_SOC=62023 -DARDUINO=10607 -DF_CPU=10000000LL -DRISCDUINO_UNO "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6\\cores\\riscduino" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6\\variants\\standard" "C:\\Users\\kolle\\AppData\\Local\\Temp\\arduino\\sketches\\60A71343D36B7E50BB586124F13F75AF\\sketch\\main.ino.cpp" -o nul
+Alternatives for Servo.h: [Servo@1.1.8 SERVO]
+ResolveLibrary(Servo.h)
+  -> candidates: [Servo@1.1.8 SERVO]
+"C:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\tools\\riscv64-unknown-elf-gcc\\1.0.1/bin/riscv64-unknown-elf-g++" -c -O2 -march=rv32imc -mabi=ilp32 -fpeel-loops -ffreestanding -ffunction-sections -fdata-sections -fpermissive -Wall -fno-rtti -fno-exceptions "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6\\system/include" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6/sdk/bsp/include" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6/sdk/bsp/env" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6/sdk/bsp/drivers" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6/sdk/bsp/env/riscduino" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6/sdk/bsp/env/uncache" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\tools\\riscv64-unknown-elf-gcc\\1.0.1/riscv64-unknown-elf/include/c++/10.2.0/riscv64-unknown-elf/rv32imc/ilp32" -include sys/cdefs.h -g -w -x c++ -E -CC -DRISCDUINO_SOC=62023 -DARDUINO=10607 -DF_CPU=10000000LL -DRISCDUINO_UNO "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6\\cores\\riscduino" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6\\variants\\standard" "-IC:\\Users\\kolle\\AppData\\Local\\Arduino15\\packages\\riscduino\\hardware\\riscv\\1.2.6\\libraries\\SERVO" "C:\\Users\\kolle\\AppData\\Local\\Temp\\arduino\\sketches\\60A71343D36B7E50BB586124F13F75AF\\sketch\\main.ino.cpp" -o nul
+In file included from C:\Users\kolle\Documents\Arduino\test\main\main.ino:1:
+C:\Users\kolle\Documents\Arduino\test\main\parameters.h:5:10: fatal error: SoftwareSerial.h: No such file or directory
+    5 | #include <SoftwareSerial.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+Alternatives for SoftwareSerial.h: []
+ResolveLibrary(SoftwareSerial.h)
+  -> candidates: []
+Multiple libraries were found for "Servo.h"
+  Used: C:\Users\kolle\AppData\Local\Arduino15\packages\riscduino\hardware\riscv\1.2.6\libraries\SERVO
+  Not used: C:\Users\kolle\AppData\Local\Arduino15\libraries\Servo
+Using library SERVO in folder: C:\Users\kolle\AppData\Local\Arduino15\packages\riscduino\hardware\riscv\1.2.6\libraries\SERVO (legacy)
+exit status 1
+
+Compilation error: SoftwareSerial.h: No such file or directory
