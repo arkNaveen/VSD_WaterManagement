@@ -88,7 +88,7 @@ void rainwatercheck(){
   moist_level = analogRead(param.moisturePin);
   // Reads analog value from 0 to 1024 calibrated to ADC 0 to 877
   // RAIN Condition triggers servo 2 inturn turning the switch ON for rainwater harvesting
-  if(moist_level > 500) {
+  if(moist_level > 250) {
     Serial.print("Servo on switch to ON Rain Harvest Mode");
     // This turns on the top lid to collect rain water
     switchInterrupt2();
